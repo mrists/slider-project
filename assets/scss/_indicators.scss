@@ -1,0 +1,22 @@
+.indicators {
+  position: absolute;
+  z-index: 2;
+  bottom: 60px;  
+  left: calc(50% - 116px);
+  display: flex;
+
+  padding: 1em;
+
+  gap: 1em;
+}
+
+.indicator {
+  width: 20px;
+  height: 20px;
+  font-size: 21px;
+  border-radius: 10px;
+  
+  &.active {
+    background-color: black;
+  }
+}

@@ -1,0 +1,184 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.title {
+  position: absolute;
+  z-index: 2;
+  top: 70px;
+
+  width: 100%;
+
+  text-align: center;
+
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 3em;
+}
+
+.slides {
+  position: relative;
+
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+}
+
+.slide {
+  position: absolute;
+  z-index: -999;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  -webkit-transition: opacity 0.25s;
+
+  -o-transition: opacity 0.25s;
+
+  transition: opacity 0.25s;
+
+  opacity: 0;
+}
+
+.slide-text {
+  position: absolute;
+  z-index: 2;
+  top: 165px;
+  left: calc(50% - 50px);
+
+  width: 100px;
+
+  text-align: center;
+
+  color: black;
+
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 0.8em;
+}
+
+.main {
+  top: 130px;
+}
+
+.active {
+  z-index: 1;
+
+  opacity: 1;
+}
+
+.slide {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 40px;
+
+  color: #ffffff;
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  font-size: 40px;
+}
+
+.slide:nth-of-type(1) {
+  background-image: url(/assets/images/iphone-colors.jpg);
+}
+
+.slide:nth-of-type(2) {
+  background-image: url(/assets/images/iphone-12-black-select-2020.jpg);
+}
+
+.slide:nth-of-type(3) {
+  background-image: url(/assets/images/iphone-12-white-select-2020.jpg);
+}
+
+.slide:nth-of-type(4) {
+  background-image: url(/assets/images/iphone-12-red-select-2020.jpg);
+}
+
+.slide:nth-of-type(5) {
+  background-image: url(/assets/images/iphone-12-green-select-2020.jpg);
+}
+
+.slide:nth-of-type(6) {
+  background-image: url(/assets/images/iphone-12-blue-select-2020.jpg);
+}
+
+.control {
+  position: absolute;
+  z-index: 2;
+
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+
+  font-size: 50px;
+}
+
+.control-prev {
+  top: calc(50% - 25px);
+  left: 10px;
+}
+
+.control-next {
+  top: calc(50% - 25px);
+  right: 10px;
+}
+
+.control-pause {
+  right: calc(50% - 25px);
+  bottom: 10px;
+}
+
+.indicators {
+  position: absolute;
+  z-index: 2;
+  bottom: 60px;
+  left: calc(50% - 116px);
+
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
+  display: flex;
+
+  padding: 1em;
+
+  gap: 1em;
+}
+
+.indicator {
+  width: 20px;
+  height: 20px;
+
+  border-radius: 10px;
+
+  font-size: 21px;
+}
+
+.indicator.active {
+  background-color: black;
+}

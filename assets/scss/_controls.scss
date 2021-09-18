@@ -1,0 +1,26 @@
+.control {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+  user-select: none;
+  z-index: 2;
+  position: absolute;
+  font-size: 50px;
+}
+
+$calc: calc(50% - 25px);
+
+.control-prev {
+  top: $calc;
+  left: 10px;
+}
+.control-next {
+  top: $calc;
+  right: 10px;
+}
+.control-pause {
+  right: $calc;
+  bottom: 10px;
+}
