@@ -1,11 +1,21 @@
+.carousel {
+  max-width: 1100px;
+  margin: 0 auto;
+
+  background-color: white;
+}
+
 .title {
   position: absolute;
-  top: 70px;
-  font-size: 3em;
   z-index: 2;
+  top: 70px;
+
   width: 100%;
+
   text-align: center;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 3em;
 }
 .slides {
   position: relative;
@@ -31,14 +41,18 @@
   opacity: 0;
   &-text {
     position: absolute;
-    left: calc(50% - 50px);
-    top: 165px;
-    font-size: 0.8em;
-    width: 100px;
     z-index: 2;
-    color: black;
+    top: 165px;
+    left: calc(50% - 50px);
+
+    width: 100px;
+
     text-align: center;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+    color: black;
+
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-size: 0.8em;
   }
 }
 .main {
@@ -57,11 +71,10 @@
 
   color: #ffffff;
   background-color: white;
+  background-repeat: no-repeat;
+  background-position: center;
 
   font-size: 40px;
-
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 .slide:nth-of-type(1) {
@@ -87,4 +100,3 @@
 .slide:nth-of-type(6) {
   background-image: url(../images/iphone-12-blue-select-2020.jpg);
 }
-

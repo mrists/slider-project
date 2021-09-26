@@ -12,8 +12,8 @@ class SwipeCarousel extends Carousel {
 
     _initListeners() {
         super._initListeners();
-        this.container.addEventListener('touchstart', this.swipeStart);
-        this.container.addEventListener('touchend', this.swipeEnd);
+        this.container.addEventListener('touchstart', this._swipeStart.bind(this));
+        this.container.addEventListener('touchend', this._swipeEnd.bind(this));
     }
 }
 

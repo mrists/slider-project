@@ -1,11 +1,14 @@
 .indicators {
   position: absolute;
   z-index: 2;
-  bottom: 60px;  
+  bottom: 60px;
   left: calc(50% - 116px);
+
   display: flex;
 
   padding: 1em;
+
+  cursor: pointer;
 
   gap: 1em;
 }
@@ -13,10 +16,13 @@
 .indicator {
   width: 20px;
   height: 20px;
-  font-size: 21px;
+
   border-radius: 10px;
-  
+
+  font-size: 20px;
+
   &.active {
     background-color: black;
+    text-shadow: 0 0 10px black;
   }
 }
