@@ -7,13 +7,17 @@
 
 .title {
   z-index: 2;
-
+  font-family: 'Merriweather', serif;
   width: 100%;
 
   text-align: center;
 
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  font-size: 3em;
+  @media (min-height: 650px) {
+    font-size: 3rem;
+  }
+  @media (max-height: 649.8px) {
+    font-size: 2.5rem;
+  }
 }
 .slides {
   margin: 0;
@@ -27,7 +31,7 @@
   z-index: -999;
   top: 0;
   left: 0;
-
+  font-family: 'Merriweather', serif;
   width: 100%;
   height: 100%;
 
@@ -44,22 +48,25 @@
   opacity: 0;
   &:nth-of-type(1) {
     .slide-text {
-      margin: 25px;
+      position: absolute;
+      top: 11vh;
     }
     .slide-image {
-      margin-bottom: 30px;
+      max-height: 60vh;
+      margin-top: 7vh;
+      max-height: 60vh;
     }
   }
   &-text {
     z-index: 2;
 
-    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
     font-size: 0.8em;
     margin-bottom: -55px;
   }
   &-image {
-    max-width: 600px;
-    max-height: 600px;
+    width: auto;
+    padding: 30px;
+    max-height: 75vh;
   }
 }
 .active {
