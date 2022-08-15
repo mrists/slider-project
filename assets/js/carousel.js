@@ -115,7 +115,6 @@ class Carousel {
         
     _indicate(e) {
         const target = e.target;
-        console.log(target);
         if (target && target.classList.contains('fa-circle')) {
             this._pause();
             this._gotoNth(+target.dataset.slideTo);

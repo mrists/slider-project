@@ -1,46 +1,50 @@
 .control {
   position: absolute;
-  user-select: none;
-  font-size: 50px;
   z-index: 1;
+
   cursor: pointer;
+  user-select: none;
+
+  font-size: 50px;
 
   &-prev,
   &-next {
     top: 0;
-    width: 100%;
-    height: 100%;
     bottom: 0;
+
     display: flex;
     align-items: center;
     justify-content: center;
+
+    width: 100%;
     width: 10%;
+    height: 100%;
   }
 
   &-prev {
+    left: 0;
     &:hover {
+      color: white;
       background: linear-gradient(to right, rgba(lightgrey, 0.8), rgba(lightgrey, 0));
       text-shadow: 0 0 30px black;
-      color: white;
     }
-    left: 0;
   }
 
   &-next {
+    right: 0;
     &:hover {
+      color: white;
       background: linear-gradient(to left, rgba(lightgrey, 0.8), rgba(lightgrey, 0));
       text-shadow: 0 0 30px black;
-      color: white;
     }
-    right: 0;
   }
 
   &-pause {
-    bottom: 0;
     right: calc(50% - 25px);
+    bottom: 0;
     &:hover {
-      text-shadow: 0 0 30px black;
       color: white;
+      text-shadow: 0 0 30px black;
     }
   }
 }

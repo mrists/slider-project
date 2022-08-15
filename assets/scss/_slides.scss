@@ -6,9 +6,7 @@
 }
 
 .title {
-  position: absolute;
   z-index: 2;
-  top: 70px;
 
   width: 100%;
 
@@ -18,9 +16,6 @@
   font-size: 3em;
 }
 .slides {
-  position: relative;
-
-  height: 100vh;
   margin: 0;
   padding: 0;
 
@@ -38,65 +33,37 @@
 
   transition: opacity 0.25s;
 
+  padding: 40px;
+  font-size: 40px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
   opacity: 0;
+  &:nth-of-type(1) {
+    .slide-text {
+      margin: 25px;
+    }
+    .slide-image {
+      margin-bottom: 30px;
+    }
+  }
   &-text {
-    position: absolute;
     z-index: 2;
-    top: 165px;
-    left: calc(50% - 50px);
-
-    width: 100px;
-
-    text-align: center;
-
-    color: black;
 
     font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
     font-size: 0.8em;
+    margin-bottom: -55px;
+  }
+  &-image {
+    max-width: 600px;
+    max-height: 600px;
   }
 }
-.main {
-  top: 130px;
-}
-
 .active {
   z-index: 1;
 
   opacity: 1;
-}
-
-.slide {
-  box-sizing: border-box;
-  padding: 40px;
-
-  color: #ffffff;
-  background-color: white;
-  background-repeat: no-repeat;
-  background-position: center;
-
-  font-size: 40px;
-}
-
-.slide:nth-of-type(1) {
-  background-image: url(../images/iphone-colors.jpg);
-}
-
-.slide:nth-of-type(2) {
-  background-image: url(../images/iphone-12-black-select-2020.jpg);
-}
-
-.slide:nth-of-type(3) {
-  background-image: url(../images/iphone-12-white-select-2020.jpg);
-}
-
-.slide:nth-of-type(4) {
-  background-image: url(../images/iphone-12-red-select-2020.jpg);
-}
-
-.slide:nth-of-type(5) {
-  background-image: url(../images/iphone-12-green-select-2020.jpg);
-}
-
-.slide:nth-of-type(6) {
-  background-image: url(../images/iphone-12-blue-select-2020.jpg);
 }
